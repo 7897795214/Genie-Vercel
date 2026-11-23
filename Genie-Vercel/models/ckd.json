@@ -1,0 +1,150 @@
+{
+  "metrics": {
+    "accuracy": 0.9875,
+    "sensitivity": 0.98,
+    "specificity": 1.0,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "f1": 0.98989898989899,
+    "brier": 0.009467463719691323,
+    "n_test": 80,
+    "confusion_matrix": [
+      [
+        30,
+        0
+      ],
+      [
+        1,
+        49
+      ]
+    ],
+    "threshold": 0.6751906474071067,
+    "accuracy_ci": [
+      0.9625,
+      1.0
+    ],
+    "sensitivity_ci": [
+      0.936153054221002,
+      1.0
+    ],
+    "specificity_ci": [
+      1.0,
+      1.0
+    ],
+    "roc_auc_ci": [
+      1.0,
+      1.0
+    ],
+    "pr_auc_ci": [
+      1.0,
+      1.0
+    ],
+    "f1_ci": [
+      0.9670238095238095,
+      1.0
+    ],
+    "brier_ci": [
+      0.0,
+      0.028391149578828268
+    ]
+  },
+  "threshold": 0.6751906474071067,
+  "high_cut": 0.8,
+  "features": [
+    "age",
+    "bp",
+    "sg",
+    "al",
+    "su",
+    "rbc",
+    "pc",
+    "pcc",
+    "ba",
+    "bgr",
+    "bu",
+    "sc",
+    "sod",
+    "pot",
+    "hemo",
+    "pcv",
+    "wbcc",
+    "rbcc",
+    "htn",
+    "dm",
+    "cad",
+    "appet",
+    "pe",
+    "ane"
+  ],
+  "feature_order": [
+    "age",
+    "bp",
+    "sg",
+    "al",
+    "su",
+    "bgr",
+    "bu",
+    "sc",
+    "sod",
+    "pot",
+    "hemo",
+    "pcv",
+    "wbcc",
+    "rbcc",
+    "rbc",
+    "pc",
+    "pcc",
+    "ba",
+    "htn",
+    "dm",
+    "cad",
+    "appet",
+    "pe",
+    "ane"
+  ],
+  "medians": {
+    "age": 54.0,
+    "bp": 80.0,
+    "sg": 1.02,
+    "al": 0.0,
+    "su": 0.0,
+    "rbc": 0.0,
+    "pc": 0.0,
+    "pcc": 0.0,
+    "ba": 0.0,
+    "bgr": 120.5,
+    "bu": 42.0,
+    "sc": 1.2,
+    "sod": 138.0,
+    "pot": 4.3,
+    "hemo": 12.6,
+    "pcv": 40.0,
+    "wbcc": 8100.0,
+    "rbcc": 4.8,
+    "htn": 0.0,
+    "dm": 0.0,
+    "cad": 0.0,
+    "appet": 0.0,
+    "pe": 0.0,
+    "ane": 0.0
+  },
+  "training": {
+    "imputer": "mice",
+    "strategy": "smote",
+    "calibration": "isotonic",
+    "best_params": {
+      "model__max_depth": null,
+      "model__max_features": "sqrt",
+      "model__min_samples_leaf": 2,
+      "model__n_estimators": 300
+    },
+    "target_sensitivity": 0.97,
+    "cv_roc_auc": 0.9996875,
+    "calibration_brier": {
+      "uncalibrated": 0.009546596794408313,
+      "sigmoid": 0.007045643142842281,
+      "isotonic": 0.004352809434328526
+    },
+    "train_rows": 320
+  }
+}

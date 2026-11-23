@@ -1,0 +1,108 @@
+{
+  "metrics": {
+    "accuracy": 0.7280701754385965,
+    "sensitivity": 0.9506172839506173,
+    "specificity": 0.18181818181818182,
+    "roc_auc": 0.792,
+    "pr_auc": 0.915,
+    "f1": 0.832,
+    "brier": 0.167,
+    "n_test": 114,
+    "confusion_matrix": [
+      [
+        6,
+        27
+      ],
+      [
+        4,
+        77
+      ]
+    ],
+    "threshold": 0.5312947999722375,
+    "accuracy_ci": [
+      0.667,
+      0.816
+    ],
+    "sensitivity_ci": [
+      0.899,
+      1.0
+    ],
+    "specificity_ci": [
+      0.059,
+      0.324
+    ],
+    "roc_auc_ci": [
+      0.699,
+      0.869
+    ],
+    "pr_auc_ci": [
+      0.863,
+      0.954
+    ],
+    "f1_ci": [
+      0.773,
+      0.887
+    ],
+    "brier_ci": [
+      0.135,
+      0.201
+    ]
+  },
+  "threshold": 0.5312947999722375,
+  "high_cut": 0.8,
+  "features": [
+    "Age",
+    "Gender",
+    "TB",
+    "DB",
+    "Alkphos",
+    "Sgpt",
+    "Sgot",
+    "TP",
+    "ALB",
+    "AG_ratio"
+  ],
+  "feature_order": [
+    "Age",
+    "TB",
+    "DB",
+    "Alkphos",
+    "Sgpt",
+    "Sgot",
+    "TP",
+    "ALB",
+    "AG_ratio",
+    "Gender"
+  ],
+  "medians": {
+    "Age": 45.0,
+    "Gender": 1.0,
+    "TB": 1.0,
+    "DB": 0.3,
+    "Alkphos": 207.0,
+    "Sgpt": 35.0,
+    "Sgot": 41.5,
+    "TP": 6.6,
+    "ALB": 3.1,
+    "AG_ratio": 0.965
+  },
+  "training": {
+    "imputer": "mice",
+    "strategy": "class_weight",
+    "calibration": "sigmoid",
+    "best_params": {
+      "model__n_estimators": 300,
+      "model__min_samples_leaf": 8,
+      "model__max_features": "sqrt",
+      "model__max_depth": null
+    },
+    "target_sensitivity": 0.9,
+    "cv_roc_auc": 0.7297370151216305,
+    "calibration_brier": {
+      "uncalibrated": 0.19580059846884554,
+      "sigmoid": 0.1812303390943668,
+      "isotonic": 0.18354502429385097
+    },
+    "train_rows": 456
+  }
+}
